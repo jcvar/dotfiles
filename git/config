@@ -1,0 +1,8 @@
+# This is Git's per-user configuration file.
+[user]
+	name = jcvar
+	email = 36166613+jcvar@users.noreply.github.com
+[color]
+	ui = true
+[core]
+	editor = nvim
