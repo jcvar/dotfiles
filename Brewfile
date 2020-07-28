@@ -1,17 +1,30 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "homebrew/cask-drivers"
+tap "homebrew/cask-versions"
 tap "homebrew/core"
 
-brew "gcc" # GNU compiler collection
-brew "go" # Open source programming language to build simple/reliable/efficient software
-brew "maven" # Java-based project management
-brew "node" # Platform built on V8 to build network applications
-brew "python" # Interpreted, interactive, object-oriented programming language
-brew "python@2" # Interpreted, interactive, object-oriented programming language
+brew "derby"
+brew "git-lfs"
+brew "go"
+brew "neovim"
+brew "node"
+brew "pandoc"
+brew "python"
 
 cask "arduino"
 cask "atom"
+cask "discord"
 cask "intellij-idea"
 cask "itsycal"
+cask "java"
+cask "loom"
+cask "postman"
 cask "processing"
 cask "protonvpn"
+cask "qlc-plus"
+cask "sony-ps4-remote-play"
+cask "spotify"
+cask "vlc"
+cask "wkhtmltopdf"
+cask "zoomus"
