@@ -1,7 +1,7 @@
 alias ..='cd ..'
 alias vi='nvim'
 alias rm='rm -v'
-alias gcc='gcc-9'
+alias gcc='gcc-10'
 
 # brew
 alias brewtree='brew deps --tree $(brew leaves)'
