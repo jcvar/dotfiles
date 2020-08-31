@@ -18,6 +18,8 @@ alias gp='git push'
 alias gst='git status'
 alias gss='git status -s'
 alias gsb='git status -sb'
+alias glo='git log --oneline --decorate'
+alias glog='git log --oneline --decorate --graph'
 
 
 
