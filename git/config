@@ -6,3 +6,5 @@
 	ui = true
 [core]
 	editor = nvim
+[alias]
+	yolo = !git commit -m \"$(curl -s api.kanye.rest/?format=text)\"
