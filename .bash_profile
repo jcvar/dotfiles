@@ -16,3 +16,9 @@ alias gc!='git commit -v --amend'
 alias gl='git pull'
 alias gp='git push'
 alias gst='git status'
+alias gss='git status -s'
+alias gsb='git status -sb'
+
+
+
+export PATH="$HOME/.cargo/bin:$PATH"
