@@ -1,3 +1,4 @@
+# basics
 alias ..='cd ..'
 alias vi='nvim'
 alias rm='rm -v'
@@ -21,6 +22,9 @@ alias gsb='git status -sb'
 alias glo='git log --oneline --decorate'
 alias glog='git log --oneline --decorate --graph'
 
-
-
+# rust cargo
 export PATH="$HOME/.cargo/bin:$PATH"
+# ruby gem
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH="$HOME/.gem/ruby/2.7.0/bin:$PATH"
+
