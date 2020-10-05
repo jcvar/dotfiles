@@ -12,14 +12,16 @@ alias rmds_store="find . -name '.DS_Store' -type f -print -delete"
 alias g='git'
 alias ga='git add'
 alias gaa='git add --all'
+alias gb='git branch'
 alias gc='git commit -v'
 alias gc!='git commit -v --amend'
+alias gcmsg='git commit -m'
+alias gco='git checkout'
+alias gd='git diff'
 alias gl='git pull'
 alias gp='git push'
 alias gst='git status'
-alias gss='git status -s'
 alias gsb='git status -sb'
-alias glo='git log --oneline --decorate'
 alias glog='git log --oneline --decorate --graph'
 
 # rust cargo
