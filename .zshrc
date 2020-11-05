@@ -38,6 +38,6 @@ export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="$HOME/.gem/ruby/2.7.0/bin:$PATH"
 
 # tab multiplexer configuration: https://github.com/austinjones/tab-rs/
-source /Users/juanc/.tab/completion/zsh-history.zsh
+source "/Users/juanc/Library/Application Support/tab/completion/zsh-history.zsh"
 # end tab configuration
 
