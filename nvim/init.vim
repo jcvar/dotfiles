@@ -21,3 +21,6 @@ set list lcs=space:·,trail:•,tab:›·,nbsp:+,eol:¶,extends:»,precedes:«
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
+
+let g:netrw_dirhistmax = 0 " no netrw history
+
