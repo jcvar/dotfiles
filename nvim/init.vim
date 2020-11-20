@@ -1,3 +1,14 @@
+lua << EOF
+
+vim.cmd 'packadd paq-nvim'
+-- vim.api.nvim_command('packadd paq-nvim')
+local paq = require'paq-nvim'.paq
+
+paq 'ayu-theme/ayu-vim'
+
+EOF
+
+
 """ Color theme
 set termguicolors
 let ayucolor='dark'
