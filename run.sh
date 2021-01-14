@@ -2,7 +2,7 @@
 
 # Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)" &&
-	brew bundle ||
+	brew install alacritty ||
 	exit 1
 
 # Make config symlinks
