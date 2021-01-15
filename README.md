@@ -7,7 +7,7 @@
     ```
 2. Download brew and make symlinks:
     ```
-    % . ~/code/.dotfiles/run.sh
+    % . ~/code/.dotfiles/setup.sh
     ```
 3. Quit Terminal and open Alacritty (restarts shell and applies changes)
 4. ????
