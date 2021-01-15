@@ -1,13 +1,12 @@
 lua << EOF
 
-vim.cmd 'packadd paq-nvim'
--- vim.api.nvim_command('packadd paq-nvim')
-local paq = require'paq-nvim'.paq
+vim.cmd 'packadd paq-nvim'         -- Load package
+local paq = require'paq-nvim'.paq  -- Import module and bind `paq` function
+paq{'savq/paq-nvim', opt=true}     -- Let Paq manage itself
 
 paq 'ayu-theme/ayu-vim'
 
 EOF
-
 
 """ Color theme
 set termguicolors
