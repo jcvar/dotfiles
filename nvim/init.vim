@@ -5,6 +5,7 @@ local paq = require'paq-nvim'.paq  -- Import module and bind `paq` function
 paq{'savq/paq-nvim', opt=true}     -- Let Paq manage itself
 
 paq 'ayu-theme/ayu-vim'
+paq 'mattn/emmet-vim'
 
 EOF
 
