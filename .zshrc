@@ -1,6 +1,7 @@
 # options
 setopt AUTO_CD 
 setopt prompt_subst
+export CLICOLOR=1
 
 # prompt
 RPS1='%T' # Right side clock
