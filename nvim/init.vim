@@ -29,6 +29,7 @@ set colorcolumn=81
 set list lcs=space:·,trail:•,tab:›·,nbsp:+,eol:¶,extends:»,precedes:«
 
 """ TAB config
+set expandtab
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
