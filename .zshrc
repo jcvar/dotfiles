@@ -11,6 +11,8 @@ PS1='%F{magenta}$TAB%f %1~ %(?.%F{green}.%F{red})%#%f '
 alias vi='nvim'
 alias rm='rm -v'
 alias gcc='gcc-10'
+alias l='ls -A1'
+alias ll='ls -lAF'
 
 # brew
 alias brewtree='brew deps --tree $(brew leaves)'
