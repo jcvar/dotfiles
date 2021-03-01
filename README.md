@@ -1,11 +1,11 @@
-# .dotfiles
+# dotfiles
 
-**Setup**
+### Setup
 1. Clone repo:
     ```
     % git clone https://github.com/jcvar/dotfiles.git ~/code/dotfiles
     ```
-2. Download brew and make symlinks:
+2. Run setup script (download brew and make symlinks):
     ```
     % . ~/code/dotfiles/setup.sh
     ```
