@@ -12,3 +12,9 @@
 3. Quit Terminal and open Alacritty (restarts shell and applies changes)
 4. ????
 5. PROFIT
+
+### Contents
+- alacritty
+- brew
+- git
+- nvim
