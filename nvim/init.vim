@@ -10,13 +10,20 @@ paq 'neovim/nvim-lspconfig'
 paq 'mattn/emmet-vim'
 paq 'rust-lang/rust.vim'
 paq 'tpope/vim-commentary'
+paq 'savq/melange'
 
 require'lspconfig'.rls.setup{}
 
 
 EOF
 
-""" Color theme
+""" Fancy remaps
+noremap Y "+y
+noremap H ^
+noremap L $
+
+
+""" Color scheme
 set termguicolors
 let ayucolor='dark'
 colorscheme ayu
