@@ -1,16 +1,20 @@
 lua << EOF
 
+-- paq
 vim.cmd 'packadd paq-nvim'         -- Load package
 package.loaded['paq-nvim']=nil
 local paq = require'paq-nvim'.paq  -- Import module and bind `paq` function
 paq{'savq/paq-nvim', opt=true}     -- Let Paq manage itself
 
-paq 'ayu-theme/ayu-vim'
-paq 'neovim/nvim-lspconfig'
-paq 'mattn/emmet-vim'
-paq 'rust-lang/rust.vim'
-paq 'tpope/vim-commentary'
+-- Color schemes
 paq 'savq/melange'
+paq 'ayu-theme/ayu-vim'
+
+paq 'mattn/emmet-vim'
+paq 'tpope/vim-commentary'
+
+paq 'neovim/nvim-lspconfig'
+paq 'rust-lang/rust.vim'
 
 require'lspconfig'.rls.setup{}
 
