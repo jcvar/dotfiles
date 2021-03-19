@@ -19,6 +19,10 @@ set number
 set smartindent
 set fileencoding=utf-8
 
+""" Movement settings
+set whichwrap=<,>,[,]
+set iskeyword+=-
+
 """ Cursor position
 set cursorline
 set cursorcolumn
