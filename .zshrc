@@ -1,3 +1,4 @@
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 # options
 setopt AUTO_CD 
 setopt prompt_subst
