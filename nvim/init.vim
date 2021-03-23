@@ -1,3 +1,4 @@
+packadd paq-nvim
 lua require 'init'
 
 """ Fancy remaps
