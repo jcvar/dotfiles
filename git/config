@@ -8,3 +8,5 @@
 	editor = nvim
 [alias]
 	yolo = !git commit -m \"$(curl -s api.kanye.rest/?format=text)\"
+[credential]
+	helper = /mnt/c/Program\\ Files/Git/mingw64/libexec/git-core/git-credential-manager.exe
