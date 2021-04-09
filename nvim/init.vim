@@ -18,6 +18,7 @@ set nowrap
 set number
 set smartindent
 set fileencoding=utf-8
+set ignorecase
 
 """ Movement settings
 set whichwrap=<,>,[,]
