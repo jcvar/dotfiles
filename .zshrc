@@ -10,6 +10,8 @@ PS1='%F{magenta}$TAB%f %1~ %(?.%F{green}.%F{red})%#%f '
 # basics
 alias vi='nvim'
 alias rm='rm -v'
+alias py='python'
+alias py3='python3'
 alias gcc='gcc-10'
 alias l='ls -A1'
 alias ll='ls -lAF'
