@@ -1,28 +1,22 @@
--- paq
-vim.cmd 'packadd paq-nvim'         -- Load package
-package.loaded['paq-nvim']=nil
-local paq = require'paq-nvim'.paq  -- Import module and bind `paq` function
-paq{'savq/paq-nvim', opt=true}     -- Let Paq manage itself
+vim.cmd 'packadd paq-nvim'
+require 'paq-nvim' {
+    {'savq/paq-nvim', opt=true};   -- Let Paq manage itself
+    'savq/melange';
+    'ayu-theme/ayu-vim';
+    'mattn/emmet-vim';
+    'tpope/vim-commentary';
+    'nvim-treesitter/nvim-treesitter';
+    'neovim/nvim-lspconfig';
+    'rust-lang/rust.vim';
+}
 
--- Color schemes
-paq 'savq/melange'
-paq 'ayu-theme/ayu-vim'
-
-paq 'mattn/emmet-vim'
-paq 'tpope/vim-commentary'
-
--- TreeSitter
-paq 'nvim-treesitter/nvim-treesitter'
 require('nvim-treesitter.configs').setup{
     highlight = {
         enable = true,
     },
 }
 
--- LSP
-paq 'neovim/nvim-lspconfig'
-paq 'rust-lang/rust.vim'
-
 local lsp = require('lspconfig')
 lsp.rls.setup{}
--- lsp.vuels.setup{}
+vim.cmd "au BufWritePre *.rs lua vim.lsp.buf.formatting_sync()"
+
