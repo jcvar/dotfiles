@@ -1,7 +1,14 @@
-
-# CASKS
-# FORMULAE
 # TAPS
+tap "austinjones/taps"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-drivers"
+tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"
+tap "homebrew/core"
+tap "homebrew/services"
+
+# FORMULAE
 brew "austinjones/taps/tab"
 brew "bison"
 brew "clang-format"
@@ -12,7 +19,6 @@ brew "gmp"
 brew "go"
 brew "hugo"
 brew "mysql"
-brew "neovim"
 brew "neovim", args: ["HEAD"]
 brew "node"
 brew "pandoc"
@@ -22,6 +28,8 @@ brew "ruby"
 brew "rustup-init"
 brew "unrar"
 brew "wimlib"
+
+# CASKS
 cask "alacritty"
 cask "android-studio"
 cask "arduino"
@@ -51,11 +59,3 @@ cask "vlc"
 cask "wine-stable"
 cask "wkhtmltopdf"
 cask "xquartz"
-tap "austinjones/taps"
-tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/cask-drivers"
-tap "homebrew/cask-fonts"
-tap "homebrew/cask-versions"
-tap "homebrew/core"
-tap "homebrew/services"
