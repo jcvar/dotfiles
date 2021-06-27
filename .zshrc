@@ -17,6 +17,7 @@ alias l='ls -A1'
 alias ll='ls -lAF'
 
 # brew
+export PATH="/opt/homebrew/bin:$PATH"
 alias brewtree='brew deps --tree $(brew leaves)'
 # macos
 alias rmds_store="find . -name '.DS_Store' -type f -print -delete"
