@@ -19,7 +19,7 @@ brew "gmp"
 brew "go"
 brew "hugo"
 brew "mysql"
-brew "neovim", args: ["HEAD"]
+brew "neovim"
 brew "node"
 brew "pandoc"
 brew "python"
