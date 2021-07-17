@@ -14,7 +14,6 @@
 5. PROFIT
 
 ### FROM scratch
-0. Download [SF Mono](https://developer.apple.com/fonts/).
 1. Clone repo and install Command Line Tools if needed.
 2. Symlinks
 3. Install basics:
