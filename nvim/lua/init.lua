@@ -9,7 +9,7 @@ require 'paq-nvim' {
     -- Langs
     'rust-lang/rust.vim';
     -- Themes
-    {'savq/melange', branch='rewrite'};
+    'savq/melange';
     'ayu-theme/ayu-vim';
 }
 
