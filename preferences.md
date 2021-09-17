@@ -1,5 +1,10 @@
 # System Preferences
 
+## Itsycal
+```
+y-MM-dd eeeee HH:mm
+```
+
 ## Dock & Menu Bar
 
 ### Dock
