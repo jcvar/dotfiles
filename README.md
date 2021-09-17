@@ -1,6 +1,6 @@
 # dotfiles
 
-### Setup
+## Setup
 1. Clone repo:
     ```
     % git clone https://github.com/jcvar/dotfiles.git ~/code/dotfiles
@@ -13,7 +13,7 @@
 4. ????
 5. PROFIT
 
-### FROM scratch
+## FROM scratch
 1. Clone repo and install Command Line Tools if needed.
 2. Symlinks
 3. Install basics:
@@ -24,7 +24,7 @@
 4. PaqInstall
 5. GitHub Token
 
-### Contents
+## Contents
 - alacritty
 - brew
 - git
