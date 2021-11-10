@@ -46,7 +46,7 @@ export PATH="$HOME/.gem/ruby/2.7.0/bin:$PATH"
 # tab multiplexer configuration: https://github.com/austinjones/tab-rs/
 source "/Users/jc/Library/Application Support/tab/completion/zsh-history.zsh"
 # end tab configuration
-
+FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
 # The following lines were added by compinstall
 
 zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
