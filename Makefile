@@ -15,3 +15,6 @@ symlinks:
 	ln -s ~/code/dotfiles/git ~/.config/git
 	ln -s ~/code/dotfiles/alacritty  ~/.config/alacritty
 	ln -s ~/code/dotfiles/nvim  ~/.config/nvim
+
+clean:
+	echo TODO
