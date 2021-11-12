@@ -4,7 +4,6 @@ setopt prompt_subst
 export CLICOLOR=1
 
 # prompt
-RPS1='%T' # Right side clock
 PS1='%F{magenta}$TAB%f %1~ %(?.%F{green}.%F{red})%#%f '
 
 # basics
