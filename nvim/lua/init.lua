@@ -29,6 +29,10 @@ require('nvim-treesitter.configs').setup{
     }
 }
 
+vim.g.markdown_fenced_languages = {
+  "ts=typescript"
+}
+
 local lsp = require('lspconfig')
 lsp.rust_analyzer.setup{}
 lsp.denols.setup{}
