@@ -17,4 +17,7 @@ symlinks:
 	ln -s ~/code/dotfiles/nvim  ~/.config/nvim
 
 clean:
-	echo TODO
+	rm ~/.zshrc
+	rm ~/.config/git
+	rm ~/.config/alacritty
+	rm ~/.config/nvim
