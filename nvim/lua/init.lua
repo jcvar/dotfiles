@@ -30,6 +30,7 @@ require('nvim-treesitter.configs').setup{
 }
 
 local lsp = require('lspconfig')
-lsp.rls.setup{}
-vim.cmd "au BufWritePre *.rs lua vim.lsp.buf.formatting_sync()" -- rust lsp autoformat
+lsp.rust_analyzer.setup{}
+lsp.denols.setup{}
+vim.cmd "autocmd BufWritePre *.rs lua vim.lsp.buf.formatting_sync()" -- rust lsp autoformat
 
