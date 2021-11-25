@@ -11,8 +11,15 @@ require 'paq-nvim' {
     -- Themes
     'savq/melange';
     'ayu-theme/ayu-vim';
+    -- nvim-cmp
+    'hrsh7th/cmp-buffer';
+    'hrsh7th/cmp-cmdline';
+    'hrsh7th/cmp-nvim-lsp';
+    'hrsh7th/cmp-path';
+    'hrsh7th/nvim-cmp';
 }
 
+-- tree-sitter config
 require('nvim-treesitter.configs').setup{
     highlight = {
         enable = true,
@@ -33,6 +40,7 @@ vim.g.markdown_fenced_languages = {
   "ts=typescript"
 }
 
+-- lsp config
 local lsp = require('lspconfig')
 lsp.rust_analyzer.setup{}
 lsp.denols.setup{}
