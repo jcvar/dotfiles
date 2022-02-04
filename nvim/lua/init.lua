@@ -1,4 +1,4 @@
-require 'paq-nvim' {
+require 'paq' {
     'savq/paq-nvim';   -- Let Paq manage itself
     -- Utils
     'mattn/emmet-vim';
