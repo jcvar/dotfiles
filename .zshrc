@@ -14,6 +14,8 @@ alias py3='python3'
 alias gcc='gcc-10'
 alias l='ls -A1'
 alias ll='ls -lAF'
+alias jl='julia -q'
+alias pluto='julia -q -e "import Pluto; Pluto.run()"'
 
 # brew
 export PATH="/opt/homebrew/bin:$PATH"
