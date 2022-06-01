@@ -7,4 +7,4 @@
 [core]
 	editor = nvim
 [alias]
-	yolo = !git commit -m \"$(curl -s api.kanye.rest/?format=text)\"
+	yolo = !git commit -m \"$(curl -s api.kanye.rest/text)\"
