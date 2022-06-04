@@ -32,11 +32,14 @@ require('nvim-treesitter.configs').setup{
         'c';
         'dart';
         'javascript';
-        'typescript';
+        'json';
+        'jsonc';
         'lua';
         'python';
         'rust';
+        'svelte';
         'toml';
+        'typescript';
     }
 }
 
@@ -46,8 +49,24 @@ vim.g.markdown_fenced_languages = {
 
 -- lsp config
 local lsp = require('lspconfig')
-lsp.rust_analyzer.setup{}
-lsp.denols.setup{}
+local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+capabilities.textDocument.completion.completionItem.snippetSupport = true
+
+attach = function()
+    vim.keymap.set('n', 'K', vim.lsp.buf.hover, {buffer = 0})
+    vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {buffer = 0})
+end
+
+lsp.rust_analyzer.setup{
+    on_attach = attach,
+    capabilities = capabilities,
+}
+lsp.denols.setup{
+    on_attach = attach,
+    capabilities = capabilities,
+}
+lsp.jsonls.setup{}
+lsp.svelte.setup{}
 vim.cmd "autocmd BufWritePre *.rs lua vim.lsp.buf.formatting_sync()" -- rust lsp autoformat
 
 -- cmp config
@@ -102,14 +121,4 @@ cmp.setup.cmdline(':', {
         { name = 'cmdline' }
     })
 })
-
--- Setup lspconfig.
-local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
--- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
-lsp['rust_analyzer'].setup {
-    capabilities = capabilities
-}
-lsp['denols'].setup {
-    capabilities = capabilities
-}
 
