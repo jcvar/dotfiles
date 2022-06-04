@@ -1,0 +1,6 @@
+# tab-rs config
+key_bindings:
+  - action: SelectInteractive
+    keys: ctrl-Q
+
+fuzzy: []
