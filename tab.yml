@@ -1,7 +1,7 @@
 # tab-rs config
 key_bindings:
   - action: SelectInteractive
-    keys: ctrl-W
+    keys: ctrl-H
 
 fuzzy:
   create_tab: false
