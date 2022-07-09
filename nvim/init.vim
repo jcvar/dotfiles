@@ -19,6 +19,7 @@ set number
 set smartindent
 set fileencoding=utf-8
 set ignorecase
+set relativenumber
 
 """ Movement settings
 set whichwrap=<,>,[,]
