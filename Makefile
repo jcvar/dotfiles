@@ -14,6 +14,7 @@ symlinks:
 	ln -s ~/code/dotfiles/tab.yml ~/.config/tab.yml
 	ln -s ~/code/dotfiles/git ~/.config/git
 	ln -s ~/code/dotfiles/alacritty  ~/.config/alacritty
+	ln -s ~/code/dotfiles/wezterm  ~/.config/wezterm
 	ln -s ~/code/dotfiles/nvim  ~/.config/nvim
 
 clean:
@@ -21,4 +22,5 @@ clean:
 	rm ~/.config/tab.yml
 	rm ~/.config/git
 	rm ~/.config/alacritty
+	rm ~/.config/wezterm
 	rm ~/.config/nvim
