@@ -43,9 +43,6 @@ alias glog='git log --oneline --decorate --graph'
 # rust cargo
 export PATH="$HOME/.cargo/bin:$PATH"
 
-# tab multiplexer configuration: https://github.com/austinjones/tab-rs/
-source "/Users/jc/Library/Application Support/tab/completion/zsh-history.zsh"
-# end tab configuration
 FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
 # The following lines were added by compinstall
 

@@ -1,5 +1,4 @@
 # TAPS
-tap "austinjones/taps"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-drivers"
@@ -9,7 +8,6 @@ tap "homebrew/core"
 tap "homebrew/services"
 
 # FORMULAE
-brew "austinjones/taps/tab"
 brew "exercism"
 brew "neovim"
 brew "pandoc"

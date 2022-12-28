@@ -11,7 +11,6 @@ paq:
 symlinks:
 	ln -s ~/code/dotfiles/.zshrc ~/.zshrc
 	mkdir -p ~/.config
-	ln -s ~/code/dotfiles/tab.yml ~/.config/tab.yml
 	ln -s ~/code/dotfiles/git ~/.config/git
 	ln -s ~/code/dotfiles/alacritty  ~/.config/alacritty
 	ln -s ~/code/dotfiles/wezterm  ~/.config/wezterm
@@ -19,7 +18,6 @@ symlinks:
 
 clean:
 	rm ~/.zshrc
-	rm ~/.config/tab.yml
 	rm ~/.config/git
 	rm ~/.config/alacritty
 	rm ~/.config/wezterm
