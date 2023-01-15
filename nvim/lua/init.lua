@@ -9,7 +9,7 @@ require 'paq' {
     -- Langs
     'rust-lang/rust.vim';
     -- Themes
-    'savq/melange';
+    'savq/melange-nvim';
     'ayu-theme/ayu-vim';
     -- nvim-cmp
     'hrsh7th/cmp-buffer';
