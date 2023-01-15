@@ -31,7 +31,7 @@ set cursorcolumn
 set colorcolumn=81
 
 """ Whitespace characters
-set list lcs=space:·,trail:•,tab:›·,nbsp:+,eol:¶,extends:»,precedes:«
+set list lcs=space:·,trail:•,tab:›·,nbsp:+,eol:~,extends:»,precedes:«
 
 """ TAB config
 set expandtab
