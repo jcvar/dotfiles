@@ -25,7 +25,7 @@
 5. GitHub Token
 
 ## Contents
-- alacritty
 - brew
 - git
 - nvim
+- wezterm

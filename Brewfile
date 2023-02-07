@@ -6,6 +6,7 @@ tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
+tap "wez/wezterm"
 
 # FORMULAE
 brew "exercism"
@@ -13,7 +14,6 @@ brew "neovim"
 brew "pandoc"
 
 # CASKS
-cask "alacritty"
 cask "discord"
 cask "docker"
 cask "firefox"
@@ -28,4 +28,5 @@ cask "itsycal"
 cask "rectangle"
 cask "spotify"
 cask "visual-studio-code"
+cask "wezterm"
 cask "wkhtmltopdf"
