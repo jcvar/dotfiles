@@ -1,4 +1,3 @@
-# TAPS
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-drivers"
@@ -7,13 +6,9 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "wez/wezterm"
-
-# FORMULAE
 brew "exercism"
 brew "neovim"
 brew "pandoc"
-
-# CASKS
 cask "discord"
 cask "docker"
 cask "firefox"
