@@ -26,4 +26,6 @@ Network Trash Folder
 Temporary Items
 .apdisk
 # https://raw.githubusercontent.com/github/gitignore/main/Global/macOS.gitignore
+Brewfile.lock.json
+.netwrhist
 .vscode
