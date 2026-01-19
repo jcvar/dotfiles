@@ -2,6 +2,7 @@ require 'paq' {
     'savq/paq-nvim';   -- Let Paq manage itself
     'savq/melange-nvim';
     { 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' };
+    'nvim-mini/mini.completion';
     'mattn/emmet-vim';
     'tpope/vim-commentary';
 }
@@ -26,3 +27,8 @@ require('nvim-treesitter.configs').setup{
         'typescript';
     }
 }
+
+-- mini.completion config
+require('mini.completion').setup()
+vim.keymap.set('i', '<Tab>', [[pumvisible() ? "\<C-n>" : "\<Tab>"]], { expr = true })
+vim.keymap.set('i', '<S-Tab>', [[pumvisible() ? "\<C-p>" : "\<S-Tab>"]], { expr = true })
