@@ -1,6 +1,3 @@
-tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/core"
 brew "deno"
 brew "exercism"
 brew "neovim"
