@@ -1,20 +1,28 @@
-default:
-	echo "Default target"
+PAQ_DIR = $(HOME)/.local/share/nvim/site/pack/paqs/start/paq-nvim
+
+init: \
+	brew \
+	paq \
+	paqsync \
+	
+	echo "init complete"
 
 brew:
-	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+	type brew || /bin/bash -c "$$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 paq:
-	git clone --depth=1 https://github.com/savq/paq-nvim.git \
-    "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/pack/paqs/start/paq-nvim
+	[ -d $(PAQ_DIR) ] || git clone --depth=1 https://github.com/savq/paq-nvim.git $(PAQ_DIR)
+
+paqsync: symlinks
+	nvim --headless -c "autocmd User PaqDoneSync quit" -c "PaqSync"
 
 symlinks:
-	ln -s ~/code/dotfiles/.zshrc ~/.zshrc
+	ln -fhs ~/code/dotfiles/.zshrc ~/.zshrc
 	mkdir -p ~/.config
-	ln -s ~/code/dotfiles/git ~/.config/git
-	ln -s ~/code/dotfiles/nvim  ~/.config/nvim
+	ln -fhs ~/code/dotfiles/git ~/.config/git
+	ln -fhs ~/code/dotfiles/nvim  ~/.config/nvim
 
-clean:
-	rm ~/.zshrc
-	rm ~/.config/git
-	rm ~/.config/nvim
+cleanlinks:
+	rm -fv ~/.zshrc
+	rm -fv ~/.config/git
+	rm -fv ~/.config/nvim
