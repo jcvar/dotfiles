@@ -28,4 +28,3 @@
 - brew
 - git
 - nvim
-- wezterm

@@ -12,11 +12,9 @@ symlinks:
 	ln -s ~/code/dotfiles/.zshrc ~/.zshrc
 	mkdir -p ~/.config
 	ln -s ~/code/dotfiles/git ~/.config/git
-	ln -s ~/code/dotfiles/wezterm  ~/.config/wezterm
 	ln -s ~/code/dotfiles/nvim  ~/.config/nvim
 
 clean:
 	rm ~/.zshrc
 	rm ~/.config/git
-	rm ~/.config/wezterm
 	rm ~/.config/nvim
