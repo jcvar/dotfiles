@@ -7,9 +7,6 @@ noremap L $
 
 
 """ Color scheme
-set termguicolors
-" let ayucolor='dark'
-" colorscheme ayu
 colorscheme melange
 
 """ General settings
