@@ -19,8 +19,3 @@ make
     - Paq
 4. PaqInstall
 5. GitHub Token
-
-## Contents
-- brew
-- git
-- nvim
