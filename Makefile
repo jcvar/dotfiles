@@ -2,7 +2,6 @@ PAQ_DIR = $(HOME)/.local/share/nvim/site/pack/paqs/start/paq-nvim
 
 init: \
 	brew \
-	paq \
 	paqsync \
 	
 	echo "init complete"
@@ -13,7 +12,7 @@ brew:
 paq:
 	[ -d $(PAQ_DIR) ] || git clone --depth=1 https://github.com/savq/paq-nvim.git $(PAQ_DIR)
 
-paqsync: symlinks
+paqsync: symlinks paq
 	nvim --headless -c "autocmd User PaqDoneSync quit" -c "PaqSync"
 
 symlinks:
