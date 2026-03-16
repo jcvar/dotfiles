@@ -2,6 +2,7 @@
 setopt AUTO_CD 
 setopt prompt_subst
 export CLICOLOR=1
+export MANPAGER='nvim +Man!'
 
 # prompt
 PS1='%F{magenta}$TAB%f %1~ %(?.%F{green}.%F{red})%#%f '
