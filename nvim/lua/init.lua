@@ -8,25 +8,21 @@ require 'paq' {
 }
 
 -- tree-sitter config
-require('nvim-treesitter.configs').setup{
-    highlight = {
-        enable = true,
-    },
-    ensure_installed = {
-        'c',
-        'dart',
-        'javascript',
-        'json',
-        'jsonc',
-        'markdown',
-        'markdown_inline',
-        'python',
-        'rust',
-        'svelte',
-        'toml',
-        'typescript',
-    }
+local langs = {
+    'c',
+    'dart',
+    'javascript',
+    'json',
+    'jsonc',
+    'markdown',
+    'markdown_inline',
+    'python',
+    'rust',
+    'svelte',
+    'toml',
+    'typescript',
 }
+-- require('nvim-treesitter').install(langs)
 
 -- mini.completion config
 require('mini.completion').setup()
