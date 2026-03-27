@@ -4,7 +4,6 @@
 brew "deno"
 brew "exercism"
 brew "neovim"
-brew "node"
 brew "typst"
 cask "discord"
 cask "docker-desktop"
